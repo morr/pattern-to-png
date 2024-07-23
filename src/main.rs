@@ -7,6 +7,7 @@ fn char_to_color(c: char) -> Rgb<u8> {
     match c {
         '.' => Rgb([0, 0, 0]),                             // Black
         '#' => Rgb([255, 255, 255]),                       // White
+        'W' => Rgb([255, 255, 255]),                       // White
         'R' => Rgb([255, 0, 0]),                           // Red
         'O' => Rgb([255, 165, 0]),                         // Orange
         'Y' => Rgb([255, 255, 0]),                         // Yellow
