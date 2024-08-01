@@ -3,7 +3,7 @@
 set -e
 
 TARGET_DIR=${CARGO_TARGET_DIR:-target}
-DEBUG_PATH="$TARGET_DIR/debug/pattern-to-png"
+RELEASE_PATH="$TARGET_DIR/release/pattern-to-png"
 HOME_DIR="$HOME"
 BIN_DIR="$HOME_DIR/bin"
 COPY_PATH="$BIN_DIR/pattern-to-png"
@@ -16,5 +16,5 @@ if [ -f "$COPY_PATH" ]; then
   rm -f "$COPY_PATH"
 fi
 
-cp "$DEBUG_PATH" "$COPY_PATH"
+cp "$RELEASE_PATH" "$COPY_PATH"
 echo "Executable copied to $COPY_PATH"

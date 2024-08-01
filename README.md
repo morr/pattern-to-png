@@ -1,4 +1,4 @@
 ## how to run
 ```sh
-cat sample.txt | target/debug/pattern-to-png 10x | imgcat
+cargo build --release && cat sample.txt | target/release/pattern-to-png 10x | imgcat
 ```
